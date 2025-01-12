@@ -1,5 +1,5 @@
-# Introduction to Key-Exchange
-
+# Service-Exchange-Keys-101
+An introductory assignment for learning public/private-key exchange.
 Recommended level:
 - Ability to code and understand python
 - Some basic understanding of networks
