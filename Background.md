@@ -9,7 +9,7 @@ Maria has a SAT score of 900. John has a SAT score of 1000. At the start of clas
 How should Maria and John do this?
 
 ## Solution & Analysis
-Maria tells John her number (900), John then sums up his number (1000) with the number he recieved (900) to get (1900). He reports it (1900) to Jane and solves the problem.
+John requests Maria for her number. Maria tells John her number (900), John then sums up his number (1000) with the number he recieved (900) to get (1900). He reports it (1900) to Jane and solves the problem.
 
 This problem is trivial. Due to unlimited constrainsts for John and Maria's communication, they can communicate directly with numbers to each other. We will see how limiting this make this system unfeasible.
 
@@ -17,7 +17,7 @@ This problem is trivial. Due to unlimited constrainsts for John and Maria's comm
 Jane does not want to hear a SAT score of below 1200. She will tolerate the sum being more than 1800, but if any one of them mentions a SAT below 1200, both of them will be punished. Jane can hear everything Maria and John say, so neither John or Maria should say their SAT score to each other. How should John and Maria proceed?
 
 ## Solution & Analysis for single score
-Maria, instead of telling John her number, tells John a string. She also tells John a method of turning the string back into a number. The method is to use [a-j] to replace [0-9]. When John recieves the string, he uses the method Maria gave him to turn it into a number. He sums the numbers and tells Jane their summed number.
+John decides to help Maria out. He requests Maria her number, but to transform it into a string. The method is to use [a-j] to replace [0-9]. Maria transforms the number to a string and sends it. When John recieves the string, he uses the method Maria gave him to turn it into a number. He sums the numbers and tells Jane their summed number.
 
 Due to the transformation of the number into a string, Jane does not hear a score below 1200. While Maria and John's communication was hindered by the fact that they couldn't directly tell each other, John and Maria were still able to cleverly use transformations of their number to prevent Jane from hearing. The 3rd modification will be signficantly harder; We will see what happens to our system if Jane becomes intelligent.
 
