@@ -1,10 +1,13 @@
 # Service-Exchange-Keys-101
 An introductory assignment for learning public/private-key exchange.
+
+Difficulty: Medium.
+
 Recommended level:
 - Ability to code and understand python
 - Some basic understanding of networks
 
-Please read Background.md to gain some understanding of Key-Exchange.
+Please read [Background.md](https://github.com/mzen17/SEP01-HW/blob/main/Background.md) to gain some understanding of Key-Exchange.
 
 ## Environment Setup
 Linux + Python3. Other environments not tested, but all UNIX environments should work.

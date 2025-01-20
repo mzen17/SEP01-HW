@@ -18,21 +18,14 @@ def init_connection(host: str, port: int):
     return client_socket
 
 
-def send_recv(cs: socket, message: str, type: bool):
+def send_recv(host: str, port: int, message: str):
     """Send a message and recieve a response.
     message - the str to send
-    type - REQ False (a string) or FUNC True (an encryption type)
+    type - REQ SAT (request SAT) or FUNC (enable encryption)
     Returns response.
     """
-    cs.sendall(message.encode())
-    response = cs.recv(1024).decode() 
-    return response
-
-def raw_sendrecv(cs: socket, message: str):
-    """Send a message raw.
-    message - the str to send
-    Returns response.
-    """
-    cs.sendall(message.encode())
-    response = cs.recv(1024).decode() 
+    cs = init_connection(host, port)
+    cs.send(message.encode())
+    response = cs.recv(1024).decode()
+    cs.close()
     return response
