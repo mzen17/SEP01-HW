@@ -17,13 +17,17 @@ Run `sudo python3 -m test.py`.
 Why does this program need sudo? [It turns out, to create a socket in Linux, one needs root access](https://security.stackexchange.com/questions/244635/why-do-i-need-root-privileges-to-send-a-raw-packet-from-a-unix-machine).
 
 ## Notes
-You should only be modifying the client.py file. Other files are system libraries.
+- You should only be modifying the client.py file. Other files are system libraries.
+- Some files are 
 
 ## Task 1
-Implement SAT sharing with basic calculations. The framework is already included.
+- Implement SAT sharing with basic calculations.
+- Ensure it says test1 passed.
 
 ## Task 2
-Implement a instruction send + the instruction. The framework is already included.
+- Implement decrypt and encrypt for strings->int and int->string
+- Utilize it during SAT sharing.
+- Ensure test2 passes.
 
 ## Task 3
 IP.

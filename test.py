@@ -54,6 +54,9 @@ def test2():
         print("Correct Answer: 1900")
 
 time.sleep(1)
+test1()
+
+time.sleep(1)
 test2()
 
 # stop servers after tests to clean
