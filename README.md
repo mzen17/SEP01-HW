@@ -18,7 +18,10 @@ Why does this program need sudo? [It turns out, to create a socket in Linux, one
 
 ## Notes
 - You should only be modifying the client.py file. Other files are system libraries.
-- Some files are 
+- Sometimes the code will hang. Ctrl+C to quit.
+- This is what tests passing should look like:
+![image](https://github.com/user-attachments/assets/4306973e-4f3f-40d4-b3ea-7cf59f3ac707)
+
 
 ## Task 1
 - Implement SAT sharing with basic calculations.
