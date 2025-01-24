@@ -10,9 +10,15 @@ Recommended level:
 Please read [Background.md](https://github.com/mzen17/SEP01-HW/blob/main/Background.md) to gain some understanding of Key-Exchange.
 
 ## Environment Setup
-Linux + Python3. Other environments not tested, but all UNIX environments should work.
+Linux + Python3 + Git. Other environments not tested, but all UNIX environments should work.
 
-Run `sudo python3 -m test.py`.
+Run the following:
+
+```
+git clone https://github.com/mzen17/SEP01-HW.git
+cd SEP01-HW
+sudo python3 -m test.py`
+```
 
 Why does this program need sudo? [It turns out, to create a socket in Linux, one needs root access](https://security.stackexchange.com/questions/244635/why-do-i-need-root-privileges-to-send-a-raw-packet-from-a-unix-machine).
 
