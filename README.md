@@ -17,7 +17,7 @@ Run the following:
 ```
 git clone https://github.com/mzen17/SEP01-HW.git
 cd SEP01-HW
-sudo python3 -m test.py`
+sudo python3 -m test.py
 ```
 
 Why does this program need sudo? [It turns out, to create a socket in Linux, one needs root access](https://security.stackexchange.com/questions/244635/why-do-i-need-root-privileges-to-send-a-raw-packet-from-a-unix-machine).
